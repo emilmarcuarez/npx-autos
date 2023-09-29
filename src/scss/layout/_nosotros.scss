@@ -1,0 +1,47 @@
+@use 'base/variable' as v;
+@use 'base/mixins' as m;
+
+.nosotros-contenedor{
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    h2{
+        margin: 0;
+        padding: 3rem;
+        color: v.$blanco;
+    }
+}
+.nosotros-contenedor2{
+    padding: 2rem 3rem;
+    @include m.tablet{
+         @include m.grid(2, 3rem);
+    }
+    .imagen-nosotros{
+        img{
+            box-shadow: 11px 11px 19px -12px rgba(28,28,28,0.76);
+-webkit-box-shadow: 11px 11px 19px -12px rgba(28,28,28,0.76);
+-moz-box-shadow: 11px 11px 19px -12px rgba(28,28,28,0.76);
+        }
+    }
+    .texto-nosotros{ 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        
+        p{
+            margin: 0;
+            line-height: 2;
+            font-size: 2.8rem;
+           max-width: 500px;
+           color: v.$blanco;
+        }
+        
+    }
+    
+}
+hr{
+    border: .1rem solid v.$negro;
+}

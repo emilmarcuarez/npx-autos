@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPX autos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+             <h1>NPX autos</h1>
+             <nav class="navegacion-principal">
+                 <a href="#nosotros">Nosotros</a>
+                 <a href="#autos">Autos</a>
+                 <a href="#ubicacion">Ubicacion</a>
+                 <a href="#pasos">Pasos</a>
+             </nav>
+        </div>
+     </header>
+
+     <div class="barra"></div>
+
+     <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <p class="parrafo-video">Renta el auto de tus sueños</p>
+                <p>con "NPX Autos"</p>
+            </div>
+        </div>   
+        <video autoplay muted loop>
+            <source src="video/toyota.mp4" type="video/mp4">
+            <source src="video/toyota.ogg" type="video/ogg">
+            <source src="video/toyota.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div class="barra"></div>
+
+    <div id="nosotros" class="nosotros-contenedor sobre-nosotros">
+        <h2 class="center">Nosotros</h2>
+            <div class="nosotros-contenedor2">
+                
+                <div class="imagen-nosotros">
+                    <hr> 
+                    <picture>
+                        <source srcset="build/img/personal.avif" type="imagen/avif">
+                        <source srcset="build/img/personal.webp" type="imagen/webp">
+                        <img loading="lazy" width="200" height="300" src="build/img/personal.jpg" alt="imagen del personal">
+                    </picture>
+                     <hr> 
+            </div>
+                
+                <div class="texto-nosotros">
+                    <p class="center">"Somos una empresa dedicada al alquiler de vehiculos lujosos, en donde tu bienestar y seguridad son nuestros principales objetivos. Contamos con personal altamente calificado para atenderte y ayudarte en el proceso de alquiler, asi que no dudes en contactarnos"</p>
+                </div>
+             </div>
+    </div>
+    <section class="imagen" data-aos="fade-up-right">
+        <picture>
+            <source srcset="build/img/acompanar.avif" type="imagen/avif">
+            <source srcset="build/img/acompanar.webp" type="imagen/webp">
+            <img loading="lazy" width="200" height="300" src="build/img/acompanar.png" alt="">
+        </picture>
+    </section>
+    <section id="autos" class="galeria contenedor">
+        <h3>Autos en alquiler</h3>
+        <ul class="galeria-autos">
+
+        </ul>
+    </section>
+
+    <div id="ubicacion" class="ubicacion">
+        <div class="ubicacion-contenedor">
+            <div class="ubicacion-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.101745672308!2d-62.7437788498627!3d8.292672702340388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbf97ad69c6793%3A0xa1109be348e37510!2sOrinokia%20Mall!5e0!3m2!1ses!2sve!4v1673501645332!5m2!1ses!2sve" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="ubicacion-texto">
+                <h3>Ubicacion</h3>
+                <p>1- Nos encontramos ubicados al fente de la plaza el hierro, en el Centro Comercial Orinokia Mall, zona santo tome, piso 2, oficina #21. <br><br> 2- En el piso 3, diagonal a la imprenta monte carlos del c.c. Orinokia, oficina #51.</p>
+                <p class="p-2">Puerto Ordaz, Edo. Bolivar, Venezuela.</p>
+            </div>
+        </div>
+    </div>
+    <div id="pasos" class="alquilar">
+        <h3>Pasos a seguir</h3>
+        <div class="alquilar-contenedor contenedor">
+            <div class="car">
+                <i class="fa-solid fa-earth-americas"></i>
+                <p>Nos dirigimos a donde quieras que estes para ofrecerte la mejor atencion.</p>
+            </div>
+            <div class="car">
+                <i class="fa-solid fa-people-roof"></i>
+                <p>Te ayudamos a escoger el auto que se adapte a toda la familia.</p>
+            </div>
+            <div class="car">
+                <i class="fa-solid fa-file-contract"></i>
+                <p>Firmamos un contrato, donde se detallan todas las clausulas del auto y del seguro.</p>
+            </div>
+            <div class="car">
+                <i class="fa-solid fa-credit-card"></i>
+                <p>Nos ajustamos al metodo de pago de tu preferencia y ofrecemos varias alternativas.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+       <p>Copyright &copy. Emilmar Cuarez. 2023</p>
+    </footer>
+    <!-- Link de font-awesome -->
+    <script src="https://kit.fontawesome.com/8aca401b21.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- link del script app.js -->
+    <script src="build/js/app.js"></script>
+    <!-- <script>
+        AOS.init();
+      </script> -->
+</body>
+</html>

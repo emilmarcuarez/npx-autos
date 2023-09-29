@@ -1,0 +1,52 @@
+@use 'base/variable' as v;
+@use 'base/mixins' as m;
+
+.video{
+    position: relative;
+    max-height: 60rem; //50rem se ve mejor que 70rem
+    min-height: 50rem;//aqui 50 rem para que sea mas factible en el tlf
+    overflow: hidden;
+    .overlay{
+        position: absolute;
+        background: rgb(133,60,80);
+background: linear-gradient(90deg, rgba(133,60,80,0.32790616246498594) 0%, rgba(131,113,113,0.4287464985994398) 100%);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;//si es con column permite poner el texto que esta adentro de el en el ecentro
+        justify-content:center;    }
+
+    video{
+       width:auto ;     
+          display: block;
+        @include m.desktop {
+            width: 100%;
+        }
+    }
+}
+
+.contenido-video{
+    z-index: 10;
+    h2{
+        color: v.$blanco;
+        font-size: 5rem;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .parrafo-video{
+        background-color: v.$vinotinto;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: v.$blanco;
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin: 0;
+    }
+    p:last-child{
+        color: v.$blanco;
+        display: inline-block;
+        padding: 1rem;
+        font-weight: 700;
+    }
+}

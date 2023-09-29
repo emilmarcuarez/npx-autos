@@ -1,0 +1,41 @@
+@use 'base/mixins' as m;
+@use 'base/variable' as v;
+
+.alquilar{
+    margin: 5rem 0;
+    h3{
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(62, 62, 62);
+    }
+ .alquilar-contenedor{
+    @include m.telefono {
+        @include m.grid(1,3rem);
+    }
+    @include m.tablet {
+        @include m.grid(2,3rem);
+    }
+    @include m.desktop {
+        @include m.grid(4,3rem);
+    }
+ }
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 251, 251);
+    padding: 2rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 2rem;
+    margin: 2rem;
+    i{
+        font-size: 4rem;
+       color:v.$azul;
+    }    
+    p{
+        color: rgb(62, 62, 62);
+        text-align: center;
+    }
+}
